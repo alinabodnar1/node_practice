@@ -1,12 +1,7 @@
-// GLOBALS - NO WINDOW object (no brauzer)!!!
+const _ = require("lodash");
 
-// __dirname - path to current directory
-// __filename - file name
-// require - function to use modules (CommonJS)
-// module = info about current module (file)
-// process - info about env where the program is being executed
+const items = [1, [2, [3, [4]]]]
 
-// console.log(__dirname);
+const newItems = _.flatMapDeep(items);
 
-const { readFile, writeFile } = require("fs");
-
+console.log('newItems:', newItems); // newItems: [ 1, 2, 3, 4 ]

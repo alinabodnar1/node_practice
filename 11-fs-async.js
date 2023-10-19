@@ -1,6 +1,6 @@
 const { readFile, writeFile } = require("fs"); // async
 
-console.log('start');
+console.log('start a first task');
 
 readFile("./content/first.txt", "utf-8", (err, result) => {
   if (err) {
